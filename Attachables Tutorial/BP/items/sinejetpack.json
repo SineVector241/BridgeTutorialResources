@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "sine:sinejetpack",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "bridge_sinejetpack"
+			},
+			"minecraft:armor": {
+				"protection": 2
+			},
+			"minecraft:wearable": {
+				"dispensable": true,
+				"slot": "slot.armor.chest"
+			}
+		}
+	}
+}

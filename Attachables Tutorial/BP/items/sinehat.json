@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "sine:sinehat",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "bridge_sinehat"
+			},
+			"minecraft:armor": {},
+			"minecraft:wearable": {
+				"dispensable": true,
+				"slot": "slot.armor.head"
+			}
+		}
+	}
+}

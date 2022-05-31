@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "Attachables",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"bridge_sinehat": {
+			"textures": "textures/items/sinehat"
+		},
+		"bridge_sinejetpack": {
+			"textures": "textures/items/sinejetpack"
+		}
+	}
+}
