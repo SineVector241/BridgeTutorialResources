@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bridge:sinesword",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "bridge_sinesword"
+			},
+			"minecraft:weapon": {},
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": 5
+		}
+	}
+}

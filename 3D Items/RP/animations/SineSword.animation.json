@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sinesword.firstpersonwield": {
+			"loop": true,
+			"animation_length": 3.12,
+			"bones": {
+				"Main": {
+					"rotation": [60, 0, 0]
+				},
+				"CircularPivot": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"3.12": [0, 0, 360]
+					}
+				}
+			}
+		},
+		"animation.sinesword.thirdpersonanimation": {
+			"loop": true,
+			"animation_length": 3.12,
+			"bones": {
+				"CircularPivot": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"3.12": [0, 0, 360]
+					}
+				}
+			}
+		}
+	}
+}
