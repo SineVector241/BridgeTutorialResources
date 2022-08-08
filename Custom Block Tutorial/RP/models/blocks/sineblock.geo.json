@@ -1,0 +1,235 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sineblock",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "Main",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								8,
+								-8
+							],
+							"size": [
+								16,
+								1,
+								16
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								7,
+								9,
+								-8
+							],
+							"size": [
+								1,
+								3,
+								16
+							],
+							"uv": [
+								18,
+								20
+							]
+						},
+						{
+							"origin": [
+								-8,
+								9,
+								-8
+							],
+							"size": [
+								1,
+								3,
+								16
+							],
+							"uv": [
+								0,
+								17
+							]
+						},
+						{
+							"origin": [
+								-8,
+								9,
+								-7
+							],
+							"size": [
+								1,
+								3,
+								14
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": [
+								36,
+								17
+							]
+						},
+						{
+							"origin": [
+								-8,
+								0,
+								6
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": [
+								8,
+								17
+							]
+						},
+						{
+							"origin": [
+								6,
+								0,
+								6
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": [
+								0,
+								17
+							]
+						},
+						{
+							"origin": [
+								6,
+								0,
+								-8
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": [
+								8,
+								0
+							]
+						},
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								7,
+								9,
+								-7
+							],
+							"size": [
+								1,
+								3,
+								14
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": [
+								0,
+								36
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

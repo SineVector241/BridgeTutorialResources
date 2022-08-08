@@ -1,0 +1,107 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bridge:sine_test_block",
+			"is_experimental": false,
+			"properties": {
+				"sine:rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"events": {
+			"sine:set_rotation": {
+				"set_block_property": {
+					"sine:rotation": "(query.cardinal_facing_2d)"
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('sine:rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('sine:rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('sine:rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('sine:rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"components": {
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "construction"
+			},
+			"minecraft:on_player_placing": {
+				"event": "sine:set_rotation"
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:geometry": "geometry.sine_test_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "bridge_sine_test_block",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					10,
+					16
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					10,
+					16
+				]
+			}
+		}
+	}
+}

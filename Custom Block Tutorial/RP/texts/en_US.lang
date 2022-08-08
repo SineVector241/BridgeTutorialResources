@@ -1,0 +1,6 @@
+pack.name=Custom Block Tutorial RP
+pack.description=Custom Blocks from bridge tutorials
+tile.bridge:sine_test_block.name=§dSine Block
+item.bridge:bottle=Bottle
+tile.bridge:sineblock.name=§9Sine Block§r
+tile.bridge:sineblock.name=§9Sine Block§r

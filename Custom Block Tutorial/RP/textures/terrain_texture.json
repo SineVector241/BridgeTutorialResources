@@ -1,0 +1,14 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Custom Block Tutorial",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"bridge_sine_test_block": {
+			"textures": "textures/blocks/sineblock"
+		},
+		"bridge_sineblock": {
+			"textures": "textures/blocks/sineblock2"
+		}
+	}
+}
