@@ -1,0 +1,29 @@
+{
+    "interactive_sounds": {
+        "block_sounds": {
+            "amethyst_block": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.amethyst_block",
+                        "volume": 1.0
+                    },
+                    "jump": {
+                        "sound": "step.amethyst_block",
+                        "volume": 1.0
+                    },
+                    "land": {
+                        "sound": "step.amethyst_block",
+                        "volume": 1.0
+                    },
+                    "step": {
+                        "sound": "fall.slime",
+                        "volume": 1.0
+                    }
+                },
+                "pitch": 1.0,
+                "volume": 1.0
+            }
+        }
+    }
+}

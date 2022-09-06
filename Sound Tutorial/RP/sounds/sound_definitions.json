@@ -1,0 +1,15 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "vexento.touch": {
+            "sounds": [
+                {
+                    "name": "sounds/Vexento - Touch",
+                    "volume": 1.0
+                }
+            ],
+            "category": "neutral",
+            "max_distance": 30.0
+        }
+    }
+}

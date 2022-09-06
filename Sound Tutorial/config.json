@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Sound Tutorial",
+	"namespace": "bridge",
+	"authors": [
+		"SineVector241"
+	],
+	"targetVersion": "1.19.20",
+	"description": "Sounds!",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"experimentalMolangFeatures": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Sound Tutorial"
+				}
+			]
+		]
+	}
+}
