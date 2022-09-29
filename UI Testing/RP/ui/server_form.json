@@ -1,0 +1,301 @@
+{
+	"namespace": "custom_form_testing",
+	"main_screen_content": {
+		"type": "panel",
+		"size": [
+			0,
+			0
+		],
+		"controls": [
+			{
+				"server_form_factory": {
+					"type": "factory",
+					"control_ids": {
+						"long_form": "@server_form.long_form",
+						"custom_form": "@server_form.custom_form"
+					}
+				}
+			}
+		]
+	},
+	"long_form_panel": {
+		"type": "stack_panel",
+		"size": [
+			"100%",
+			"100%"
+		],
+		"orientation": "vertical",
+		"layer": 1,
+		"anchor_from": "top_left",
+		"anchor_to": "top_left",
+		"controls": [
+			{
+				"scrolling_panel@common.scrolling_panel": {
+					"anchor_to": "top_left",
+					"anchor_from": "top_left",
+					"$show_background": false,
+					"size": [
+						"100%",
+						"100%"
+					],
+					"$scrolling_content": "server_form.long_form_scrolling_content",
+					"$scroll_size": [
+						5,
+						"100% - 4px"
+					],
+					"$scrolling_pane_size": [
+						"100% - 4px",
+						"100% - 2px"
+					],
+					"$scrolling_pane_offset": [
+						2,
+						0
+					],
+					"$scroll_bar_right_padding_size": [
+						0,
+						0
+					]
+				}
+			}
+		]
+	},
+	"long_form": {
+		"controls": [
+			{
+				"default@common_dialogs.main_panel_no_buttons": {
+					"$title_panel": "common_dialogs.standard_title_label",
+					"$title_size": [
+						"100% - 14px",
+						10
+					],
+					"size": [
+						225,
+						200
+					],
+					"$text_name": "#title_text",
+					"$title_text_binding_type": "none",
+					"$child_control": "server_form.long_form_panel",
+					"layer": 2,
+					"bindings": [
+						{
+							"binding_type": "global",
+							"binding_name": "#title_text",
+							"binding_name_override": "#text"
+						},
+						{
+							"binding_type": "view", // make this a viewing binding
+							"source_property_name": "(not (#text = 'E'))", // detect when the title text string is not equal to "hello world"
+							"target_property_name": "#visible" // override the #visibility property depending on if "source_property_name" is true or false
+						}
+					]
+				}
+			},
+			{
+				"page1@server_form.test": {
+					"bindings": [
+						{
+							"binding_type": "global",
+							"binding_name": "#title_text",
+							"binding_name_override": "#text"
+						},
+						{
+							"binding_type": "view", // make this a viewing binding
+							"source_property_name": "(#text = 'E')", // detect when the title text string is not equal to "hello world"
+							"target_property_name": "#visible" // override the #visibility property depending on if "source_property_name" is true or false
+						}
+					]
+				}
+			}
+		]
+	},
+	"test": {
+		"type": "panel",
+		"layer": 3,
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"controls": [
+			{
+				"second@common.square_image_border_white": {
+					"size": [
+						600,
+						250
+					],
+					"anchor_from": "center",
+					"anchor_to": "center",
+					"controls": [
+						{
+							"background": {
+								"type": "image",
+								"texture": "textures/Black",
+								"size": [
+									"100%",
+									"100%"
+								],
+								"alpha": 0.5,
+								"keep_ratio": false
+							}
+						},
+						{
+							"back_button@close_button": {
+								"anchor_from": "top_right",
+								"anchor_to": "top_right",
+								"offset": [
+									-5,
+									5
+								]
+							}
+						},
+						{
+							"long_form_dynamic_buttons_panel": {
+								"type": "stack_panel",
+								"size": [
+									"100% - 4px",
+									"100%"
+								],
+								"offset": [
+									0,
+									25
+								],
+								"orientation": "vertical",
+								"anchor_from": "top_middle",
+								"anchor_to": "top_middle",
+								"factory": {
+									"name": "buttons",
+									"control_name": "server_form.custom_dynamic_button"
+								},
+								"collection_name": "form_buttons",
+								"bindings": [
+									{
+										"binding_name": "#form_button_length",
+										"binding_name_override": "#collection_length"
+									}
+								]
+							}
+						},
+						{
+							"title": {
+								"offset": [
+									0,
+									10
+								],
+								"type": "label",
+								"text": "SERVERS",
+								"text_alignment": "center",
+								"anchor_from": "top_middle",
+								"anchor_to": "top_middle"
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+	"custom_dynamic_button": {
+		"type": "stack_panel",
+		"size": [
+			"100%",
+			32
+		],
+		"orientation": "horizontal",
+		"controls": [
+			{
+				"panel_name": {
+					"type": "panel",
+					"size": [
+						34,
+						"100%c"
+					],
+					"bindings": [
+						{
+							"binding_type": "view",
+							"source_control_name": "image",
+							"resolve_sibling_scope": true,
+							"source_property_name": "(not (#texture = ''))",
+							"target_property_name": "#visible"
+						}
+					],
+					"controls": [
+						{
+							"image": {
+								"type": "image",
+								"layer": 2,
+								"size": [
+									32,
+									32
+								],
+								"offset": [
+									-2,
+									0
+								],
+								"bindings": [
+									{
+										"binding_name": "#form_button_texture",
+										"binding_name_override": "#texture",
+										"binding_type": "collection",
+										"binding_collection_name": "form_buttons"
+									},
+									{
+										"binding_name": "#form_button_texture_file_system",
+										"binding_name_override": "#texture_file_system",
+										"binding_type": "collection",
+										"binding_collection_name": "form_buttons"
+									},
+									{
+										"binding_type": "view",
+										"source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+										"target_property_name": "#visible"
+									}
+								]
+							}
+						},
+						{
+							"progress@progress.progress_loading_bars": {
+								"size": [
+									30,
+									4
+								],
+								"offset": [
+									-2,
+									16
+								],
+								"bindings": [
+									{
+										"binding_type": "view",
+										"source_control_name": "image",
+										"resolve_sibling_scope": true,
+										"source_property_name": "(#texture = 'loading')",
+										"target_property_name": "#visible"
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"form_button@common_buttons.dark_text_button": {
+					"$pressed_button_name": "button.form_button_click",
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"size": [
+						"fill",
+						32
+					],
+					"$button_text": "#form_button_text",
+					"$button_text_binding_type": "collection",
+					"$button_text_grid_collection_name": "form_buttons",
+					"$button_text_max_size": [
+						"100%",
+						20
+					],
+					"bindings": [
+						{
+							"binding_type": "collection_details",
+							"binding_collection_name": "form_buttons"
+						}
+					]
+				}
+			}
+		]
+	}
+}

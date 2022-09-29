@@ -1,0 +1,42 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"SineVector241"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.3.3"
+			],
+			"dash": [
+				"0.9.29"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			19,
+			20
+		],
+		"uuid": "3bfb2889-5a07-4b76-97df-93f522c779b6",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "dab34d3d-09ae-4a60-8323-c53d445f2e7b",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

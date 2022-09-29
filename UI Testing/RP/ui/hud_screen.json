@@ -1,0 +1,30 @@
+{
+	"namespace": "hud",
+	"clouds_image": {
+		"type": "image",
+		"texture": "textures/clouds",
+		"size": [
+			40,
+			40
+		],
+		"anchor_from": "top_middle",
+		"anchor_to": "top_middle",
+		"offset": [
+			0,
+			5
+		]
+	},
+	"root_panel": {
+		"modifications": [
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": [
+					{
+						"clouds_image@hud.clouds_image": {}
+					}
+				]
+			}
+		]
+	}
+}

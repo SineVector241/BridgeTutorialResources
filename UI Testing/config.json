@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "UI Testing",
+	"namespace": "bridge",
+	"authors": [
+		"SineVector241"
+	],
+	"targetVersion": "1.19.20",
+	"description": "Testing the JSON UI",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": false,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": true,
+		"experimentalMolangFeatures": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "UI Testing"
+				}
+			]
+		]
+	}
+}
