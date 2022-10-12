@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sine:coudeybot",
+			"materials": {
+				"default": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/entity/CoudeyTexture"
+			},
+			"geometry": {
+				"default": "geometry.coudey"
+			},
+			"animations": {
+				"controller": "controller.animation.coudey.default",
+				"backflip": "animation.coudey.backflip",
+				"idle": "animation.coudey.idle"
+			},
+			"particle_effects": {
+				"customendrod": "sine:customendrod",
+				"coudeyparticle": "sine:coudeyparticle"
+			},
+			"render_controllers": [
+				"controller.render.coudeybot"
+			],
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			}
+		}
+	}
+}

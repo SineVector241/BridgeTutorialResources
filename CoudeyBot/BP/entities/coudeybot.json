@@ -1,0 +1,66 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sine:coudeybot",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"default": "controller.animation.coudey.default"
+			},
+			"scripts": {
+				"animate": [
+					"default"
+				]
+			}
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:collision_box": {
+				"height": 0.4,
+				"width": 0.25
+			},
+			"minecraft:can_fly": {},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:flying_speed": {
+				"value": 0.1
+			},
+			"minecraft:navigation.hover": {
+				"can_path_over_water": true,
+				"can_sink": false,
+				"can_pass_doors": false,
+				"can_path_from_air": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true,
+				"avoid_sun": false
+			},
+			"minecraft:behavior.float": {
+				"priority": 7
+			},
+			"minecraft:movement.hover": {},
+			"minecraft:health": {
+				"max": 32,
+				"min": 0,
+				"value": 32
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 8
+			},
+			"minecraft:behavior.random_hover": {
+				"priority": 9,
+				"xz_dist": 8,
+				"y_dist": 8,
+				"y_offset": -1,
+				"interval": 20,
+				"hover_height": [
+					1,
+					2
+				]
+			}
+		},
+		"events": {}
+	}
+}

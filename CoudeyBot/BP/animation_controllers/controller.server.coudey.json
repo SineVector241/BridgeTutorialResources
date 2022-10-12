@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.coudey.default": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"/say §k|§rHello§k|"
+					],
+					"transitions": [
+						{
+							"moving": "query.modified_move_speed >= 0.1"
+						}
+					]
+				},
+				"moving": {
+					"on_entry": [
+						"/say §k|§rGoodbye§k|"
+					],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed < 0.1"
+						}
+					]
+				}
+			}
+		}
+	}
+}
