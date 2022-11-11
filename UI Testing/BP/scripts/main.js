@@ -1,5 +1,5 @@
-import { world } from 'mojang-minecraft';
-import { ActionFormData } from 'mojang-minecraft-ui';
+import { world } from '@minecraft/server';
+import { ActionFormData } from '@minecraft/server-ui';
 
 const form = new ActionFormData()
     .button("§6Server 1")
