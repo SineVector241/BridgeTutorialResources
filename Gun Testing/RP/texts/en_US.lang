@@ -1,0 +1,4 @@
+pack.name=Gun Testing RP
+pack.description=Testing gun mechanics
+item.bridge:mp7=§cMP7
+item.bridge:mp7_ammo=MP7 Ammo Box

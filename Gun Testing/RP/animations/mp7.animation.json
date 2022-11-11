@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mp7.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"Mp7": {
+					"rotation": [
+						100.6213,
+						55.5792,
+						-20.3587
+					],
+					"position": [
+						5,
+						10,
+						5
+					]
+				}
+			}
+		},
+		"animation.mp7.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"Mp7": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						21.9,
+						-5
+					],
+					"scale": 0.8
+				}
+			}
+		}
+	}
+}

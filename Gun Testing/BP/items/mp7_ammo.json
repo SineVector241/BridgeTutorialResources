@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bridge:mp7_ammo",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "bridge_mp7_ammo"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:allow_off_hand": true,
+			"minecraft:wearable": {
+				"slot": "slot.weapon.offhand"
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "Gun Testing",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"bridge_mp7": {
+			"textures": "textures/items/mp7"
+		},
+		"bridge_mp7_ammo": {
+			"textures": "textures/items/mp7_ammo"
+		}
+	}
+}

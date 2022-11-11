@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Gun Testing",
+	"namespace": "bridge",
+	"authors": [
+		"SineVector241"
+	],
+	"targetVersion": "1.19.40",
+	"description": "Testing gun mechanics",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"experimentalMolangFeatures": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Gun Testing"
+				}
+			]
+		]
+	}
+}
